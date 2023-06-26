@@ -189,7 +189,7 @@ def load_images(image_urls):
         ): volume,  # fine-tuned model will be stored at `MODEL_DIR`
     },
     timeout=1800,  # 30 minutes
-    secrets=[Secret.from_name("huggingface")],
+    secrets=[Secret.from_name("huggingface-2")],
 )
 def train(instance_example_urls):
     import subprocess
